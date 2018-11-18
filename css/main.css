@@ -1,5 +1,12 @@
 body {
   color: #200c44;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
 }
 
 a {
@@ -9,19 +16,35 @@ a {
 
 #header {
   display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+main {
+  margin: 80px;
 }
 
 #header-img {
-  height: 90px;
+  height: 80px;
 }
 
 #nav-bar {
-  background: #e7ad92;
+  background: #e7ad92cc;
+  background-image: url('../pic/fabric-1-dark.png');
   width: 100%;
+  height: 80px;
 }
 
 #nav-list {
   display: flex;
+  justify-content: flex-end;
+  font-size: 1.7em;
+  font-family: 'Allerta Stencil', sans-serif;
+}
+
+#nav-list li {
+  padding-right: 30px;
 }
 
 .input-box {
