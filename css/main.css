@@ -1,0 +1,25 @@
+body {
+  color: #200c44;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#header {
+  display: flex;
+}
+
+#header-img {
+  height: 90px;
+}
+
+#nav-bar {
+  background: #e7ad92;
+  width: 100%;
+}
+
+#nav-list {
+  display: flex;
+}
