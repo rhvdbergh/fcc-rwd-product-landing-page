@@ -23,3 +23,7 @@ a {
 #nav-list {
   display: flex;
 }
+
+.input-box {
+  width: 250px;
+}
