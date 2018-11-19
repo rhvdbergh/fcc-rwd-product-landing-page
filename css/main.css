@@ -3,6 +3,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   padding: 0;
   margin: 0;
+  background: #e7ad9291;
 }
 
 ul {
@@ -65,19 +66,22 @@ main {
 .sec-header {
   font-family: 'Allerta Stencil', sans-serif;
   text-align: center;
-  margin-top: 80px;
+  padding-top: 100px;
 }
 
 .info {
   max-width: 800px;
   margin: auto;
+  margin-top: 100px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 #video-div {
   margin: 0 auto;
   max-width: 560px;
   height: 315px;
-  
+  margin-top: 50px;
 }
 
 #video {
@@ -97,7 +101,15 @@ main {
   height: 350px;
   background: #e7ad92;
   box-shadow: 2px 2px 2px #200c44;
+  text-align: center;
 }
+
+.price, .heading {
+  font-family: 'Allerta Stencil', sans-serif;
+  font-size: 2em;
+  padding-top: 20px;
+}
+
 
 #email-form-div {
   display: flex;
@@ -147,8 +159,14 @@ input {
     height: 160px;
   }
 
-  main {
-    margin-top: 160px;
+  .sec-header {
+    padding-top: 180px;
   }
+
+  .info {
+    margin-top: 50px; 
+  }
+
+
 
 }
