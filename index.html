@@ -9,13 +9,14 @@
   <title>Mirthy Earth Product Landing Page</title>
 </head>
 <body>
-  <header id="header">
+  <header id="header" class="menu hide-menu">
     <img src="./pic/logo.png" alt="Mirthy Earth Logo" id="header-img">
     <nav id="nav-bar">
       <ul id="nav-list">
         <li><a href="#sustain" class="nav-link">Sustainability</a></li>
         <li><a class="nav-link" href="#learn">Learn More</a></li>
         <li><a class="nav-link" href="#products">Products</a></li>
+        <li><p id="hide-arrow" class="nav-link">⬇</p></li>
       </ul>
     </nav>
   </header>
@@ -63,5 +64,25 @@
   </main>
   <!-- FreeCodeCamp Test Suite -->
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script>
+
+  function checkForMenu(e) {
+
+    const navBar = document.querySelector('#nav-bar');
+    const header = document.querySelector('#header');
+    const arrow = document.querySelector('#hide-arrow');
+
+    if (e.target === navBar || e.target === arrow) {
+      header.classList.toggle('hide-menu');
+      arrow.style.display = 'none';
+    } else if (!(header.classList.contains('hide-menu'))) {
+        header.classList.toggle('hide-menu');
+        arrow.style.display = 'block';
+    }
+  }
+
+  window.addEventListener('click', checkForMenu);
+  
+  </script>
 </body>
 </html>

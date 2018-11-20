@@ -25,6 +25,7 @@ h1 {
   top: 0;
   width: 100%;
   box-shadow: 0px 3px 3px #e7ad92;
+  transition: 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 main {
@@ -61,6 +62,10 @@ main {
 
 #nav-list li {
   padding-right: 30px;
+}
+
+#hide-arrow {
+  display: none;
 }
 
 .sec-header {
@@ -121,6 +126,8 @@ input {
   margin: auto;
 }
 
+/******** Media Requests *********/
+
 @media only screen and (max-width: 850px) {
 
   #product-container {
@@ -146,27 +153,35 @@ input {
 
 @media only screen and (max-width: 570px) {
 
+  .hide-menu {
+    transform: translateY(-140px);
+  }
+  
   #nav-list {
     display: block;
     text-align: center;
   }
 
+  #hide-arrow {
+    padding-top: 0px;
+    margin-top: 0px;
+    display: block;
+  }
+  
   #nav-list li {
     padding: 3px;
   }
-
+  
   #nav-bar {
     height: 160px;
+    padding-bottom: 25px;
   }
 
   .sec-header {
-    padding-top: 180px;
+    padding-top: 60px;
   }
 
   .info {
     margin-top: 50px; 
   }
-
-
-
 }
