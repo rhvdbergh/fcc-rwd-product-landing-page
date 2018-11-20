@@ -16,7 +16,7 @@
         <li><a href="#sustain" class="nav-link">Sustainability</a></li>
         <li><a class="nav-link" href="#learn">Learn More</a></li>
         <li><a class="nav-link" href="#products">Products</a></li>
-        <li><p id="hide-arrow" class="nav-link">⬇</p></li>
+        <li><p class="nav-link hide-arrow">⬇</p></li>
       </ul>
     </nav>
   </header>
@@ -70,14 +70,12 @@
 
     const navBar = document.querySelector('#nav-bar');
     const header = document.querySelector('#header');
-    const arrow = document.querySelector('#hide-arrow');
+    const arrow = document.querySelector('.hide-arrow');
 
     if (e.target === navBar || e.target === arrow) {
       header.classList.toggle('hide-menu');
-      arrow.style.display = 'none';
     } else if (!(header.classList.contains('hide-menu'))) {
         header.classList.toggle('hide-menu');
-        arrow.style.display = 'block';
     }
   }
 

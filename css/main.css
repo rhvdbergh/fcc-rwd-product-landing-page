@@ -64,7 +64,7 @@ main {
   padding-right: 30px;
 }
 
-#hide-arrow {
+.hide-arrow {
   display: none;
 }
 
@@ -162,7 +162,7 @@ input {
     text-align: center;
   }
 
-  #hide-arrow {
+  .hide-arrow {
     padding-top: 0px;
     margin-top: 0px;
     display: block;
